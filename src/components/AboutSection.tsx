@@ -249,7 +249,7 @@ const AboutSection = () => {
               <div className="w-20 h-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full mb-8"></div>
             </div>
             <p className="text-xl text-slate-700 leading-relaxed font-light">
-              We bring a practiced and nuanced landlord's perspective to tenant representation which imbues our clients with a comprehensive understanding of the current state of the market and the best approach to leasing in the moment.
+              We bring a practiced and nuanced landlord&apos;s perspective to tenant representation which imbues our clients with a comprehensive understanding of the current state of the market and the best approach to leasing in the moment.
             </p>
             
             {/* Tenant Services */}
