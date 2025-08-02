@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+  
+  .glass-effect {
+    @apply bg-white/95 backdrop-blur-md;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl;
+  }
+  
+  .button-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .button-secondary {
+    @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+}
+
+/* Loading states */
+.loading {
+  @apply animate-pulse bg-gray-200;
+}
+
+/* Focus states */
+.focus-ring {
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+}
+
+/* Custom selection */
+::selection {
+  background: #3b82f6;
+  color: white;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: #3b82f6;
+  color: white;
+  text-shadow: none;
+}
+
+/* Enhanced selection for different text colors */
+.gradient-text::selection {
+  background: #3b82f6;
+  color: white;
+  text-shadow: none;
+}
+
+.gradient-text::-moz-selection {
+  background: #3b82f6;
+  color: white;
+  text-shadow: none;
+}
+
+/* Selection for light text on dark backgrounds */
+.text-white::selection,
+.text-gray-100::selection,
+.text-gray-200::selection {
+  background: #1e40af;
+  color: white;
+}
+
+.text-white::-moz-selection,
+.text-gray-100::-moz-selection,
+.text-gray-200::-moz-selection {
+  background: #1e40af;
+  color: white;
+}
