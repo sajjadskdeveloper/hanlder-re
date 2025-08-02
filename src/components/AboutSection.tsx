@@ -175,7 +175,7 @@ const AboutSection = () => {
                     </div>
                     <h4 className="text-2xl font-bold mb-2">Premium Real Estate</h4>
                     <p className="text-slate-200 text-sm leading-relaxed">
-                      Strategic investments across Manhattan's most prestigious districts
+                      Strategic investments across Manhattan&apos;s most prestigious districts
                     </p>
                   </div>
                 </div>
@@ -271,8 +271,8 @@ const AboutSection = () => {
           <div className={`bg-white p-10 rounded-3xl shadow-xl border border-slate-200 transition-all duration-1000 delay-600 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
             <h4 className="text-3xl font-bold text-slate-900 mb-8">Industries We Serve</h4>
             <div className="space-y-4">
-              {industries.map((industry, index) => (
-                <div key={index} className="group p-6 bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl border-l-4 border-blue-600 hover:shadow-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 transform hover:-translate-y-1">
+              {industries.map((industry) => (
+                <div key={industry} className="group p-6 bg-gradient-to-r from-slate-50 to-slate-100 rounded-2xl border-l-4 border-blue-600 hover:shadow-lg hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-slate-900 text-lg">{industry}</span>
                     <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">

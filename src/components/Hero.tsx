@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+
 import Header from './Header';
 import Link from 'next/link';
 
@@ -53,7 +53,7 @@ const Hero = () => {
 
             {/* Description */}
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl font-light">
-              Since <span className="font-semibold text-blue-300">1979</span> when Jerry Handler founded our firm, we've brought a passion for the details to every facet of our business. As a multi-faceted real estate company and owner/operator of more than <span className="font-semibold text-purple-300">one million square feet</span> of commercial space, our decades of perspective ground our get it done approach.
+              Since <span className="font-semibold text-blue-300">1979</span> when Jerry Handler founded our firm, we&apos;ve brought a passion for the details to every facet of our business. As a multi-faceted real estate company and owner/operator of more than <span className="font-semibold text-purple-300">one million square feet</span> of commercial space, our decades of perspective ground our get it done approach.
             </p>
 
             {/* CTA Buttons */}

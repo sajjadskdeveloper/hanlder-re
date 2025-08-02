@@ -50,7 +50,7 @@ export const ElevenLabsProvider = ({ children }: ElevenLabsProviderProps) => {
       console.log("Connection terminated");
       setIsCallActive(false);
     },
-    onAudio: (audio) => {
+    onAudio: () => {
       // Handle audio if needed
     //   console.log("Audio received:", audio);
     },

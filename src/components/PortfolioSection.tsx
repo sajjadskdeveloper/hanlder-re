@@ -52,24 +52,10 @@ const properties = [
 
 const PortfolioSection = () => {
   const [activeProperty, setActiveProperty] = useState(0);
-  const [transitionDirection, setTransitionDirection] = useState('next');
-  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  // Function to handle smooth property transitions with blink effect
-  const changeProperty = (newIndex: number, direction: 'next' | 'prev') => {
-    if (isTransitioning || newIndex === activeProperty) return;
-    
-    setIsTransitioning(true);
-    setTransitionDirection(direction);
-    
-    // Smooth blink-style transition
-    setTimeout(() => {
-      setActiveProperty(newIndex);
-      setTimeout(() => {
-        setIsTransitioning(false);
-      }, 300);
-    }, 200);
-  };
+  const [isTransitioning] = useState(false);
+
+
 
   // Auto-rotation logic
   useEffect(() => {

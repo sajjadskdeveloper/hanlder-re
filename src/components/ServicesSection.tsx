@@ -74,7 +74,7 @@ const ServicesSection = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Comprehensive real estate solutions tailored to meet your unique needs. 
-            From buying and selling to investment consulting, we've got you covered.
+            From buying and selling to investment consulting, we&apos;ve got you covered.
           </p>
         </div>
 

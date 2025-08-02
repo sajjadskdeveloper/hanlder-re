@@ -176,7 +176,7 @@ const ContactSection = () => {
         subject: '',
         message: ''
       });
-    } catch (error) {
+    } catch {
       // Show error toast
       showToast('Something went wrong. Please try again or contact us directly.', 'error');
     } finally {
@@ -250,7 +250,7 @@ const ContactSection = () => {
             Get In Touch
           </div>
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-purple-900 bg-clip-text text-transparent mb-6">
-            change you
+            Contact Us
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Ready to find your dream property? Our expert team is here to guide you through 
@@ -271,7 +271,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900">Send Us a Message</h3>
-                  <p className="text-gray-600">We'll get back to you within 24 hours</p>
+                  <p className="text-gray-600">We&apos;ll get back to you within 24 hours</p>
                 </div>
               </div>
               

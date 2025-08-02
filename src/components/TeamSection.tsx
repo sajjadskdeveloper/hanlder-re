@@ -190,10 +190,10 @@ const TeamSection = () => {
 
         {/* Category Filter */}
         <div className={`flex flex-wrap justify-center gap-4 mb-12 transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {categories.map((category, index) => (
+          {categories.map((category) => (
             <button
               key={category.key}
-              onClick={() => setActiveCategory(category.key as any)}
+              onClick={() => setActiveCategory(category.key as 'PRINCIPALS' | 'TENANT REPRESENTING' | 'MANAGEMENT')}
               className={`relative px-6 py-3 rounded-full font-semibold transition-all duration-500 transform hover:scale-105 ${
                 activeCategory === category.key
                   ? `bg-gradient-to-r ${category.color} text-white shadow-lg`
