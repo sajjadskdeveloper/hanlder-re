@@ -2,7 +2,7 @@
 
 A modern, professional real estate website built with Next.js 15, TypeScript, and Tailwind CSS. This project showcases a complete landing page for "handler" with advanced UI components and responsive design.
 
-## 🏠 Features
+###🏠 Features
 
 ### Core Features
 - **Responsive Design**: Fully responsive across all devices
