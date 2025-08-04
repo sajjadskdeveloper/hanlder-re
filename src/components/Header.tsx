@@ -124,7 +124,7 @@ const Header = () => {
                  <button 
                    type="button" 
                    aria-label={isCallActive ? "End call" : "Start a call"} 
-                   className={`flex items-center space-x-2 px-3 py-1.5 text-xs font-medium rounded-xl border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-1 group/btn cursor-pointer bg-white/10 backdrop-blur-sm shadow-lg border-white/20 hover:shadow-xl transform hover:scale-105 ${
+                   className={`flex items-center space-x-2 ml-2 px-3 py-1.5 text-xs font-medium rounded-xl border transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-1 group/btn cursor-pointer bg-white/10 backdrop-blur-sm shadow-lg border-white/20 hover:shadow-xl transform hover:scale-105 ${
                      isCallActive 
                        ? 'text-white bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 border-red-400 hover:border-red-500 focus:ring-red-500' 
                        : 'text-gray-700 hover:bg-white/20'
