@@ -69,17 +69,7 @@ const Header = () => {
             {/* Contact Info & CTA */}
             <div className="flex items-center space-x-4">
               {/* Desktop Contact Info */}
-              <div className="hidden lg:flex items-center space-x-2 group">
-                <div className="w-8 h-8 bg-gradient-to-br from-slate-50 to-gray-50 rounded-full flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-slate-100 group-hover:to-gray-100 transition-all duration-300">
-                  <svg className="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-xs font-medium text-[#0582FF]">Call Us</span>
-                  <span className="text-xs text-[#0582FF]">+1 (555) 123-4567</span>
-                </div>
-              </div>
+             
               
               {/* Call Button - Desktop */}
               <div className="hidden lg:block relative group">
@@ -95,8 +85,10 @@ const Header = () => {
                    disabled={status === 'connecting' || status === 'disconnecting'}
                  >
                    <div className="relative">
-                     <div className="w-7 h-7 rounded-full overflow-hidden ring-2 ring-slate-100 group-hover:ring-slate-200 transition-all duration-300">
-                       <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("/images/sahara-home-newarrival-1.jpg")'}}></div>
+                     <div className="w-7 h-7 rounded-full overflow-hidden ring-2 ring-slate-100 group-hover:ring-slate-200 transition-all duration-300 flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                       </svg>
                      </div>
                      <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
                    </div>
@@ -133,8 +125,10 @@ const Header = () => {
                    disabled={status === 'connecting' || status === 'disconnecting'}
                  >
                    <div className="relative">
-                     <div className="w-7 h-7 rounded-full overflow-hidden ring-2 ring-slate-100 group-hover:ring-slate-200 transition-all duration-300">
-                       <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("/images/sahara-home-newarrival-1.jpg")'}}></div>
+                     <div className="w-7 h-7 rounded-full overflow-hidden ring-2 ring-slate-100 group-hover:ring-slate-200 transition-all duration-300 flex items-center justify-center bg-gradient-to-br from-blue-500 to-blue-600">
+                       <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                       </svg>
                      </div>
                      <div className="absolute -bottom-0.5 -right-0.5 w-3 h-3 bg-green-400 rounded-full border-2 border-white animate-pulse"></div>
                    </div>

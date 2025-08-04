@@ -45,7 +45,7 @@ const Hero = () => {
                   Decades of
                 </span>
                 
-                <span className="block bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-blue-400 via-emerald-500 to-amber-500 bg-clip-text text-transparent">
                   Perspective
                 </span>
               </h1>
