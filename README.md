@@ -4,6 +4,8 @@ A modern, professional real estate website built with Next.js 15, TypeScript, an
 
 ##🏠 Features
 
+
+
 ### Core Features
 - **Responsive Design**: Fully responsive across all devices
 - **Modern UI/UX**: Professional design with smooth animations and transitions
