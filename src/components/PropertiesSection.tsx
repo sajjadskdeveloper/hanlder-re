@@ -65,14 +65,16 @@ const PropertiesSection = () => {
                 <img
                   src={property.image}
                   // alt={property.title}
-                  className="w-full h-full object-fit group-hover:scale-110 transition-transform duration-700"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                 />
                 
                 {/* Enhanced Gradient Overlay */}
-                <div className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent transition-opacity duration-500 ${
+                <div className={`absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent transition-all duration-500 ease-out ${
                   hoveredProperty === property.id ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <div className="absolute bottom-0 left-0 right-0 p-10">
+                  <div className="absolute bottom-0 left-0 right-0 p-10 transform transition-transform duration-500 ease-out ${
+                    hoveredProperty === property.id ? 'translate-y-0' : 'translate-y-4'
+                  }">
                     <div className="space-y-6">
                       <div>
                         <h3 className="text-4xl font-bold text-white mb-2 leading-tight">
@@ -83,24 +85,27 @@ const PropertiesSection = () => {
                         </p>
                       </div>
                       
-                  
                       <div className="flex items-center justify-between">
-                       
+                        <div className="flex items-center space-x-4">
+                          <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                            </svg>
+                          </div>
                         </div>
                         <button className="bg-white text-gray-900 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
                           View Details
                         </button>
-                     
+                      </div>
                     </div>
                   </div>
                 </div>
                 
                 {/* Enhanced Property Type Badge */}
-                <div className="absolute top-8 right-8 bg-white/95 backdrop-blur-sm text-gray-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border border-white/50">
+                <div className="absolute top-8 right-8 bg-white/95 backdrop-blur-sm text-gray-900 px-6 py-3 rounded-full text-sm font-bold shadow-xl border border-white/50 transition-all duration-300 transform hover:scale-105">
                   {property.type}
                 </div>
 
-            
                 {/* Hover Effect Border */}
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-white/30 rounded-3xl transition-all duration-500"></div>
               </div>

@@ -52,22 +52,32 @@ const properties = [
 
 const PortfolioSection = () => {
   const [activeProperty, setActiveProperty] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const [isTransitioning] = useState(false);
-
-
-
-  // Auto-rotation logic
+  // Enhanced auto-rotation logic with smooth transitions
   useEffect(() => {
     const interval = setInterval(() => {
-      setActiveProperty((prevIndex) => {
-        const nextIndex = (prevIndex + 1) % properties.length;
-        return nextIndex;
-      });
-    }, 5000); // Change every 5 seconds
+      setIsTransitioning(true);
+      setTimeout(() => {
+        setActiveProperty((prevIndex) => {
+          const nextIndex = (prevIndex + 1) % properties.length;
+          return nextIndex;
+        });
+        setIsTransitioning(false);
+      }, 400); // Half of transition duration
+    }, 6000); // Change every 6 seconds
 
     return () => clearInterval(interval);
-  }, []); // Empty dependency array - only run once on mount
+  }, []);
+
+  const handlePropertyChange = (index: number) => {
+    if (index === activeProperty) return;
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setActiveProperty(index);
+      setIsTransitioning(false);
+    }, 400);
+  };
 
     return (
     <section id="portfolio" className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black relative overflow-hidden">
@@ -115,24 +125,40 @@ const PortfolioSection = () => {
                  {/* Active Property Display */}
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                        {/* Property Image */}
-            <div 
-              key={`image-${activeProperty}`}
-              className={`relative group transition-all duration-500 ease-in-out ${
-                isTransitioning 
-                  ? 'opacity-30 scale-95 blur-sm' 
-                  : 'opacity-100 scale-100 blur-0'
-              }`}
-            >
+            <div className="relative group">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
-                <img 
-                  src={properties[activeProperty].image} 
-                  alt={properties[activeProperty].name}
-                  className={`w-full h-full object-cover aspect-[4/3] transition-all duration-700 ease-in-out group-hover:scale-110 ${
-                    isTransitioning ? 'scale-105' : 'scale-100'
-                  }`}
-                />
+                <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  {properties.map((property, index) => (
+                    <img 
+                      key={property.id}
+                      src={property.image} 
+                      alt={property.name}
+                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-800 ease-in-out ${
+                        index === activeProperty 
+                          ? 'opacity-100 scale-100' 
+                          : 'opacity-0 scale-105'
+                      } ${isTransitioning ? 'blur-sm' : 'blur-0'}`}
+                    />
+                  ))}
+                </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
+              
+              {/* Property Navigation Dots */}
+              <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                {properties.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => handlePropertyChange(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === activeProperty 
+                        ? 'bg-white scale-125' 
+                        : 'bg-white/50 hover:bg-white/75'
+                    }`}
+                  />
+                ))}
+              </div>
+              
               <div className={`absolute -bottom-4 -right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg transition-all duration-500 ${
                 isTransitioning ? 'scale-90 opacity-60' : 'scale-100 opacity-100'
               }`}>
