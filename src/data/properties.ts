@@ -30,169 +30,55 @@ export interface PropertyDetail {
 export const propertiesData: PropertyDetail[] = [
   {
     id: '1',
-    title: '320W37',
-    subtitle: 'Luxury Manhattan Residence',
-    location: 'Manhattan, NY',
-    address: '320 West 37th Street, New York, NY 10018',
-    price: '$2,500,000',
-    bedrooms: 3,
-    bathrooms: 2.5,
-    sqft: 2200,
-    yearBuilt: 2020,
-    propertyType: 'Luxury Apartment',
-    status: 'For Sale',
-    description: `Experience the epitome of luxury living in this stunning 3-bedroom, 2.5-bathroom residence located in the heart of Manhattan. This meticulously designed property offers the perfect blend of modern sophistication and timeless elegance.
+    title: '561 Seventh Ave',
+    subtitle: '3,491 SF of Office Space Available',
+    location: 'NEW YORK, NY 10018',
+    address: '561 Seventh Ave, New York, NY 10018',
+    price: 'Upon Request',
+    bedrooms: 0,
+    bathrooms: 0,
+    sqft: 3491,
+    yearBuilt: 1925,
+    propertyType: 'Office Space',
+    status: 'Available Now',
+    description: `Join a prestigious tenant roster in Midtown West's premier boutique building. Light filled, full floor opportunity. New lobby, entrance and elevators complete. Ownership will build to suit for qualified tenant. Tenant controlled HVAC. Private bathrooms on every floor.
 
-    The open-concept living area features floor-to-ceiling windows that flood the space with natural light, creating an inviting atmosphere for both relaxation and entertainment. The gourmet kitchen is equipped with premium stainless steel appliances, custom cabinetry, and a large center island perfect for culinary enthusiasts.
+    Building is located directly next to the 123 & NWRQ trains. FMDB, ACE, 7, S and Port Authority one block away. Short walk to Penn Station and Grand Central.
 
-    The master suite is a true sanctuary, featuring a spacious walk-in closet and an en-suite bathroom with dual vanities and a rainfall shower. Two additional well-appointed bedrooms provide comfortable accommodations for family or guests.
+    This 21-story building offers 81,009 SF of total space with typical floor size of 3,944 SF. The building was originally constructed in 1925 and renovated in 1991, classified as a Class B office building. The available space on the 19th floor features 3,491 SF of office space with full build-out condition and negotiable terms.
 
-    This property includes access to world-class amenities including a 24-hour doorman, fitness center, rooftop terrace with city views, and private parking. Located in a prime Manhattan location, you'll have easy access to shopping, dining, entertainment, and transportation.`,
+    Transportation access is exceptional with Walk Score of 99 (Walker's Paradise), Transit Score of 100 (Rider's Paradise), and Bike Score of 89 (Very Bikeable). Multiple subway lines and commuter rail options are within walking distance including Times Square-42 St (1 min), 42 Street-Bryant Park (4 min), and Penn Station (6 min).`,
     features: [
-      'Floor-to-ceiling windows',
-      'Hardwood floors throughout',
-      'Gourmet kitchen with premium appliances',
-      'Master suite with walk-in closet',
-      'In-unit washer/dryer',
-      'Central air conditioning',
-      'Smart home technology',
-      'Private balcony'
+      'Full Build-Out Condition',
+      'Tenant controlled HVAC',
+      'Private bathrooms on every floor',
+      'Light filled space',
+      'New lobby and entrance',
+      'New elevators',
+      '24 Hour Access',
+      'Property Manager on Site'
     ],
     amenities: [
-      '24-hour doorman',
-      'Fitness center',
-      'Rooftop terrace',
-      'Private parking',
-      'Bike storage',
-      'Package receiving',
-      'Concierge services',
-      'Resident lounge'
+      'Metro/Subway access',
+      'Surface parking',
+      'Covered parking',
+      'Building security',
+      'Maintenance services',
+      'Proximity to Penn Station',
+      'Proximity to Grand Central',
+      'Prime Midtown West location'
     ],
     images: [
-      '/images/320w37.jpg',
       '/images/hero-bg.jpeg',
       '/images/65w36th.jpg',
-      '/images/240w37.jpg'
-    ],
-    agent: {
-      name: 'Sarah Johnson',
-      phone: '+1 (212) 555-0123',
-      email: 'sarah.johnson@realestate.com',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
-    },
-    coordinates: {
-      lat: 40.7589,
-      lng: -73.9851
-    }
-  },
-  {
-    id: '2',
-    title: '989 Avenue of the Americas',
-    subtitle: 'Modern Downtown Loft',
-    location: 'Manhattan, NY',
-    address: '989 Avenue of the Americas, New York, NY 10018',
-    price: '$1,850,000',
-    bedrooms: 2,
-    bathrooms: 2,
-    sqft: 1800,
-    yearBuilt: 2018,
-    propertyType: 'Luxury Loft',
-    status: 'For Sale',
-    description: `Discover urban sophistication in this stunning 2-bedroom, 2-bathroom loft located in the vibrant heart of Manhattan. This contemporary residence seamlessly blends industrial charm with modern luxury, creating a truly unique living experience.
-
-    The expansive open-concept layout features soaring ceilings, exposed brick walls, and large industrial windows that provide abundant natural light throughout the day. The chef's kitchen is a culinary masterpiece, featuring custom cabinetry, premium stainless steel appliances, and a large center island perfect for entertaining.
-
-    The master bedroom offers a peaceful retreat with custom built-ins and an en-suite bathroom featuring a spa-like shower and double vanity. The second bedroom is equally well-appointed and can serve as a guest room, home office, or nursery.
-
-    Residents enjoy access to a comprehensive suite of amenities including a 24-hour doorman, fitness center, rooftop deck with city views, and secure parking. The building's prime location provides easy access to shopping, dining, entertainment, and public transportation.`,
-    features: [
-      'Exposed brick walls',
-      'Soaring ceilings',
-      'Industrial windows',
-      'Chef\'s kitchen with premium appliances',
-      'Custom built-ins',
-      'Spa-like bathrooms',
-      'In-unit washer/dryer',
-      'Smart home technology'
-    ],
-    amenities: [
-      '24-hour doorman',
-      'Fitness center',
-      'Rooftop deck',
-      'Secure parking',
-      'Bike storage',
-      'Package receiving',
-      'Concierge services',
-      'Resident lounge'
-    ],
-    images: [
-      '/images/IMG_5471-q46oz9dg23mofuqg5y5q32taz468upmrxlvf8sberk.jpeg',
-      '/images/hero-bg.jpeg',
-      '/images/65w36th.jpg',
-      '/images/240w37.jpg'
-    ],
-    agent: {
-      name: 'Michael Chen',
-      phone: '+1 (212) 555-0456',
-      email: 'michael.chen@realestate.com',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
-    },
-    coordinates: {
-      lat: 40.7589,
-      lng: -73.9851
-    }
-  },
-  {
-    id: '3',
-    title: '240W37',
-    subtitle: 'Contemporary Urban Residence',
-    location: 'Manhattan, NY',
-    address: '240 West 37th Street, New York, NY 10018',
-    price: '$1,950,000',
-    bedrooms: 3,
-    bathrooms: 2,
-    sqft: 2000,
-    yearBuilt: 2019,
-    propertyType: 'Modern Apartment',
-    status: 'For Sale',
-    description: `Step into contemporary luxury with this stunning 3-bedroom, 2-bathroom residence that epitomizes modern urban living. This thoughtfully designed property combines sophisticated aesthetics with practical functionality to create the perfect home for discerning buyers.
-
-    The open-concept living area is bathed in natural light through floor-to-ceiling windows, creating a bright and airy atmosphere. The gourmet kitchen features sleek cabinetry, quartz countertops, and top-of-the-line appliances, making it ideal for both everyday cooking and entertaining.
-
-    The master suite offers a serene retreat with a spacious walk-in closet and an en-suite bathroom featuring premium fixtures and finishes. Two additional bedrooms provide flexible living space that can accommodate family, guests, or serve as a home office.
-
-    This property includes access to premium building amenities including a 24-hour doorman, state-of-the-art fitness center, rooftop terrace with panoramic city views, and secure parking. The building's prime location ensures easy access to shopping, dining, entertainment, and public transportation.`,
-    features: [
-      'Floor-to-ceiling windows',
-      'Hardwood floors',
-      'Gourmet kitchen with quartz countertops',
-      'Master suite with walk-in closet',
-      'Premium bathroom fixtures',
-      'In-unit washer/dryer',
-      'Central air conditioning',
-      'Smart home technology'
-    ],
-    amenities: [
-      '24-hour doorman',
-      'State-of-the-art fitness center',
-      'Rooftop terrace',
-      'Secure parking',
-      'Bike storage',
-      'Package receiving',
-      'Concierge services',
-      'Resident lounge'
-    ],
-    images: [
       '/images/240w37.jpg',
-      '/images/hero-bg.jpeg',
-      '/images/65w36th.jpg',
       '/images/320w37.jpg'
     ],
     agent: {
-      name: 'Emily Rodriguez',
-      phone: '+1 (212) 555-0789',
-      email: 'emily.rodriguez@realestate.com',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+      name: 'Commercial Real Estate Team',
+      phone: '+1 (212) 555-0123',
+      email: 'commercial@realestate.com',
+      image: '/images/placeholder-avatar.svg'
     },
     coordinates: {
       lat: 40.7589,
