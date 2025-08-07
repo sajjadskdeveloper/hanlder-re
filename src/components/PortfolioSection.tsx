@@ -22,7 +22,7 @@ const properties = [
     id: 2,
     name: '263 W 38TH STREET',
     location: 'NEW YORK, NY',
-    image: '/images/320w37.jpg',
+    image: '/images/dsc_7320-edit-kz.png',
     propertyType: 'Office',
     yearBuilt: '1925',
     stories: '17',
