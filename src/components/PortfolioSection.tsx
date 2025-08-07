@@ -7,7 +7,7 @@ const properties = [
     id: 1,
     name: '561 7TH AVENUE',
     location: 'NEW YORK, NY',
-    image: '/images/p2.png',
+    image: '/images/P-2.jpg',
     propertyType: 'Office',
     yearBuilt: '1925',
     stories: '21',
