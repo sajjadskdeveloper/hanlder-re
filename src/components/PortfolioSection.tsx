@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 const properties = [
   {
@@ -51,6 +52,7 @@ const properties = [
 ];
 
 const PortfolioSection = () => {
+  const router = useRouter();
   const [activeProperty, setActiveProperty] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -77,6 +79,11 @@ const PortfolioSection = () => {
       setActiveProperty(index);
       setIsTransitioning(false);
     }, 400);
+  };
+
+  const handleViewDetails = () => {
+    const propertyId = properties[activeProperty].id;
+    router.push(`/properties/${propertyId}`);
   };
 
     return (
@@ -243,7 +250,10 @@ const PortfolioSection = () => {
 
              {/* Action Buttons */}
              <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-500 ease-in-out ${!isTransitioning ? 'animate-pulse' : ''}`}>
-               <button className="flex-1 bg-white text-gray-900 py-4 px-6 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+               <button 
+                 onClick={handleViewDetails}
+                 className="flex-1 bg-white text-gray-900 py-4 px-6 rounded-xl font-semibold hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+               >
                  View Details
                </button>
                <button className="flex-1 border-2 border-white text-white py-4 px-6 rounded-xl font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">

@@ -1,5 +1,7 @@
 'use client';
 
+import Link from "next/link";
+
 const ServicesSection = () => {
   const services = [
     {
@@ -116,7 +118,9 @@ const ServicesSection = () => {
         <div className="mt-20 text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">
+              <Link href="/properties">
               Ready to Get Started?
+              </Link>
             </h3>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Let our expert team guide you through your real estate journey. 
