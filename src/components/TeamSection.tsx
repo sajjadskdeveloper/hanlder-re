@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 interface TeamMember {
   id: number;
@@ -325,7 +326,9 @@ const TeamSection = () => {
                 Contact Our Team
               </button>
               <button className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
+                <Link href="/properties">
                 View Our Properties
+                </Link>
               </button>
             </div>
           </div>

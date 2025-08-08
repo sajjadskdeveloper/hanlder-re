@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
+import Link from 'next/link';
+
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -322,7 +324,9 @@ const AboutSection = () => {
                 Contact Us Today
               </button>
               <button className="border-2 border-slate-800 text-slate-800 px-8 sm:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-semibold hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg text-sm sm:text-base">
+                <Link href="/properties">
                 View Our Properties
+                </Link>
               </button>
             </div>
           </div>
