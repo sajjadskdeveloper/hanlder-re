@@ -17,24 +17,14 @@ const PropertiesPage = () => {
   const allProperties: Property[] = [
     {
       id: '1',
-      title: '240W37',
-      image: '/images/240w37.jpg'
+      title: '315-321-W-39th-St-1',
+      image: '/images/315-321-W-39th-St-1.jpg'
     },
     {
       id: '2',
-      title: '320W37',
-      image: '/images/320w37.jpg'
+      title: '263-W-38th-St-2',
+      image: '/images/263-W-38th-St-2.jpg'
     },
-    {
-      id: '3',
-      title: '65W36',
-      image: '/images/65w36th.jpg'
-    },
-    {
-      id: '4',
-      title: '989 Avenue of the Americas',
-      image: '/images/IMG_5471-q46oz9dg23mofuqg5y5q32taz468upmrxlvf8sberk.jpeg'
-    }
   ];
 
   const filteredProperties = allProperties.filter(property => {

@@ -11,16 +11,16 @@ const PropertiesSection = () => {
     {
       id: '1',
       // title: '320W37',
-      subtitle: '320W37',
-      image: '/images/320w37.jpg',
+      subtitle: '263-W-38th-St-2',
+      image: '/images/263-W-38th-St-2.jpg',
       type: 'Architecture',
       
     },
     {
       id: '2',
       // title: 'IMG_5471',
-      subtitle: '989 Avenue of the Americas',
-      image: '/images/IMG_5471-q46oz9dg23mofuqg5y5q32taz468upmrxlvf8sberk.jpeg',
+      subtitle: '315-321-W-39th-St-1',
+      image: '/images/315-321-W-39th-St-1.jpg',
       type: 'Architecture',
     }
   ];
