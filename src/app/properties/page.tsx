@@ -17,13 +17,19 @@ const PropertiesPage = () => {
   const allProperties: Property[] = [
     {
       id: '1',
-      title: '315-321-W-39th-St-1',
-      image: '/images/315-321-W-39th-St-1.jpg'
+      title: '561-Seventh-Ave',
+      image: '/images/561-Seventh-Ave-7.jpg'
     },
     {
       id: '2',
+      title: '315-321-W-39th-St-1',
+      image: '/images/315-321-W-39th-St-4.jpg'
+    },
+    {
+      id: '3',
       title: '263-W-38th-St-2',
-      image: '/images/263-W-38th-St-2.jpg'
+      image: '/images/263-W-38th-St-6.jpg'
+
     },
   ];
 
