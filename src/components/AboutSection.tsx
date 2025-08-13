@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
 
+
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -320,8 +321,10 @@ const AboutSection = () => {
               Discover how our creative thinking and committed doing approach can transform your real estate experience
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
-              <button className="bg-gradient-to-r from-slate-800 to-slate-900 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base">
+              <button className="bg-gradient-to-r from-slate-800 to-slate-900 text-white px-8 sm:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-semibold hover:shadow-xl transition-all duration-300 transform hover:scale-105 shadow-lg text-sm sm:text-base cursor-pointer">
+                <Link href="#contact"> 
                 Contact Us Today
+                </Link>
               </button>
               <button className="border-2 border-slate-800 text-slate-800 px-8 sm:px-12 py-4 sm:py-5 rounded-xl sm:rounded-2xl font-semibold hover:bg-slate-800 hover:text-white transition-all duration-300 shadow-lg text-sm sm:text-base">
                 <Link href="/properties">

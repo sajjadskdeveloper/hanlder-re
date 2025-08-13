@@ -54,20 +54,95 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f8fafc;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #8b5cf6);
-  border-radius: 4px;
+  background: linear-gradient(to bottom, #3b82f6, #6366f1);
+  border-radius: 3px;
+  border: 1px solid #e2e8f0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #7c3aed);
+  background: linear-gradient(to bottom, #2563eb, #4f46e5);
+}
+
+/* Thumbnail gallery specific scrollbar */
+.thumbnail-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.thumbnail-scrollbar::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 3px;
+}
+
+.thumbnail-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  border-radius: 3px;
+  border: 1px solid #cbd5e1;
+}
+
+.thumbnail-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to right, #2563eb, #4f46e5);
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #3b82f6 #f8fafc;
+}
+
+/* Scroll shadows for better UX */
+.scroll-container {
+  position: relative;
+}
+
+.scroll-container::before,
+.scroll-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.scroll-container:hover::before,
+.scroll-container:hover::after {
+  opacity: 1;
+}
+
+.scroll-container::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(248, 250, 252, 0.9), transparent);
+}
+
+.scroll-container::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(248, 250, 252, 0.9), transparent);
+}
+
+/* Smooth scroll behavior */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced scrollbar animations */
+.thumbnail-scrollbar::-webkit-scrollbar-thumb {
+  transition: background 0.2s ease;
+}
+
+.thumbnail-scrollbar::-webkit-scrollbar-thumb:hover {
+  transition: background 0.2s ease;
 }
 
 /* Loading states */
